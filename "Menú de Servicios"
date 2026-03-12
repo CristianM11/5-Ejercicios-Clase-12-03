@@ -1,0 +1,56 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int opcion;
+
+        Console.WriteLine("====== MENÚ DE SERVICIOS ======");
+        Console.WriteLine("1. Consulta General");
+        Console.WriteLine("2. Laboratorio");
+        Console.WriteLine("3. Rayos X");
+        Console.WriteLine("4. Farmacia");
+        Console.WriteLine("5. Salir");
+
+        Console.Write("\nSeleccione una opción: ");
+        opcion = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("------------------------------");
+
+        switch (opcion)
+        {
+            case 1:
+                Console.WriteLine("Servicio: Consulta General");
+                Console.WriteLine("Precio: $50.000");
+                Console.WriteLine("Tiempo de espera: 20 minutos");
+                break;
+
+            case 2:
+                Console.WriteLine("Servicio: Laboratorio");
+                Console.WriteLine("Precio: $80.000");
+                Console.WriteLine("Tiempo de espera: 30 minutos");
+                break;
+
+            case 3:
+                Console.WriteLine("Servicio: Rayos X");
+                Console.WriteLine("Precio: $120.000");
+                Console.WriteLine("Tiempo de espera: 40 minutos");
+                break;
+
+            case 4:
+                Console.WriteLine("Servicio: Farmacia");
+                Console.WriteLine("Precio: Variable");
+                Console.WriteLine("Tiempo de espera: 10 minutos");
+                break;
+
+            case 5:
+                Console.WriteLine("Saliendo del sistema...");
+                break;
+
+            default:
+                Console.WriteLine("Opción inválida.");
+                break;
+        }
+    }
+}
