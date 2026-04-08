@@ -10,7 +10,7 @@ class Program
         string seguro;
         string tieneSeguro;
 
-        // Datos
+       
         Console.Write("Ingrese el nombre del paciente: ");
         nombre = Console.ReadLine();
 
@@ -26,14 +26,13 @@ class Program
         Console.Write("¿Tiene seguro? (S/N): ");
         seguro = Console.ReadLine().ToUpper();
 
-        //IMC
         imc = peso / (estatura * estatura);
 
         if (seguro == "S")
             tieneSeguro = "Sí";
         else
             tieneSeguro = "No";
-        //Menu
+       
         Console.WriteLine("\n==============================");
         Console.WriteLine("  FICHA MEDICA DEL PACIENTE");
         Console.WriteLine("==============================");
